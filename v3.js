@@ -2,6 +2,7 @@
 $(document).ready(function()
 {
    if($("#blogID").attr("blogID")!="3773919342963495931" ) 
+   if($("#blogID").attr("blogID")!="2163008762029885786" ) 
  {
    window.location.href="https://www.facebook.com/Taaalam";
  }
