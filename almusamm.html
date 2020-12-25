@@ -98,22 +98,31 @@ input[type=submit]:hover{ background: -webkit-linear-gradient(left,#4caf50,#4caf
 </style></div>
 
 
-<script>
-$(document).ready(function(){
-$("a[rel='images']").colorbox({transition:"fade"}); 
-$("a[rel='imagessamesize']").colorbox({transition:"none", width:"75%", height:"75%"});
-$("a[rel='slideshow']").colorbox({slideshow:true}); 
-$(".youtube").colorbox({iframe:true, innerWidth:760, innerHeight:520}); 
-$(".vimeo").colorbox({iframe:true, innerWidth:760, innerHeight:520});
-$(".iframe").colorbox({width:"80%", height:"80%", iframe:true}); 
-$('a[href$=jpg]').colorbox();
-$('a[href$=jpeg]').colorbox();
-$('a[href$=png]').colorbox();
-$('a[href$=gif]').colorbox();
-$('a[href$=bmp]').colorbox();
-$('a[href$=JPG]').colorbox();
-$('a[href$=JPEG]').colorbox();
-$('a[href$=pdf]').colorbox({iframe:true, innerWidth:760, innerHeight:520});
-$('a[href$=swf]') .colorbox({iframe:true, innerWidth:660, innerHeight:420});
-});
+<script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
 </script>
