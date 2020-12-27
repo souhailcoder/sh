@@ -1,0 +1,146 @@
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+<style>
+.almusamm-com  {
+    text-align: right;
+}
+input[type=email], input[type=number], input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font: normal normal 14px 'Cairo',sans-serif;
+    resize: vertical;
+}
+input[type=submit] {
+    color: #fff;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(left,#4caf50,#4caf50);
+    width: 161px;
+        font: normal normal 14px 'Cairo',sans-serif;
+transition: .3s ease-in-out;
+}
+input[type=submit]:before {
+    content: "\f0e3";
+}
+input[type=submit]:hover{     background: -webkit-linear-gradient(left,#12ce19,#3bce40);}
+.almusammform{border-radius:5px;padding:20px}
+.almusammform label {
+    font-size: 12px;
+    color: #4caf50;
+        font: 700 normal 14px 'Cairo',sans-serif;
+
+}
+
+
+#fade{opacity:0;display:none}
+.thanks_layout{text-align:center;position:fixed;top:0;left:0;bottom:0;right:0;background:rgba(255,255,255,.8);z-index:99999}
+.thanks_message{font-family:Ta3alamFont;width:50%;background:#fff;border-radius:5px;padding:20px;border:1px solid #dedede;text-align:center;color:#333;position:absolute;top:10%;left:50%;margin-left:-25%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.thanks_message .mclose a {position: relative; top: 3px; line-height: 21px; padding: 7px 25px; text-align: center; background: #3dd000; border-radius: 5px; color: #fff; font-size: 15px; text-decoration: none; font-family: 'Cairo', sans-serif; }
+.thanks_message div { font-size: 15px; color: #999; margin-bottom: 13px;    font-family: 'Cairo', sans-serif; }
+.thanks_message h2 { color: #3dd000; margin: 15px 0px 10px 0px; font-weight: 600; font-size: 17px; }
+</style>
+
+<div dir="rtl" style="text-align: right;" trbidi="on">
+<div dir="rtl" style="text-align: right;" trbidi="on">
+<div>
+<br /></div>
+<div class="mosamm">
+<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe>
+
+<br />
+<div class="almusammform">
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSdvvvFqFq1QLwisMMWfYvHKgCSXHuBHt0O9G5vfdSJtFHS4Gw/formResponse" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+
+<div class="almusamm-com">
+<label for="country">نوع الرابط:</label>
+    <br />
+<div class="custom-select">
+<select id="1073008646" name="entry.1078501057" required="required">
+                           <option value="قناة"> قناة</option>
+                           <option value="بوت"> بوت</option>
+                           <option value="مجموعة"> مجموعة</option>
+    </select>
+</div>
+</div>
+
+
+<div class="almusamm-com">
+<label>- العنوان (يفضل أن يكون قصيرا بدون رموز وسمايلات): </label>
+<input  id="1953545096" type="text" name="entry.1953545096" placeholder="ادخل العنوان هنا" required="required" />
+</div>
+<div class="almusamm-com">
+<label>- التصنيف : </label>
+<input id="333552988" type="text" name="entry.333552988" placeholder="ادخل التصنيف هنا" required="required"/>
+</div>
+<div class="almusamm-com">
+<label>- الدولة: </label>
+<input  id="628738456" type="text" name="entry.628738456"  placeholder="ادخل الدولة هنا" required="required" />
+</div>
+<div class="almusamm-com">
+<div class="falmusamm">
+<label>- ضع الرابط هنا: </label>
+<textarea id="1293820085" name="entry.1293820085" placeholder="https://t.me/xxxxx " required="required"></textarea>
+</div>
+<input type="submit" value="ارسال " />
+</form>
+<div id="fade">
+<div class="thanks_layout">
+<div class="thanks_message">
+<img alt="Thumb" height="48" src="https://3.bp.blogspot.com/-QxgD-Yeyf2g/XqGpnG8j76I/AAAAAAAAD9A/Cb0lT7o3lUEHrdczkekLLuBJuPCQW5sUACK4BGAYYCw/s1600/ezgif.com-crop%2B%25281%2529.gif" width="48" />
+<br />
+<h2>
+تم الارسال بنجاح</h2>
+<div>
+سيتم التحقق من المعلومات المرسلة ونشره قريبا </div>
+<div class="mclose">
+<a href="javascript:void(0)" onclick="document.getElementById('fade').style.display = 'none' ;myFunction()" title="Close">موافق</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br />
+<br />
+<br /></div>
+<style>
+.mosamm {margin:0 auto;text-align: center;}
+</style></div>
+
+
+<script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
+</script>
