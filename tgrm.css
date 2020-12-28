@@ -1,0 +1,127 @@
+    .fxbt {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 5px;    text-align: center;
+    margin: 0 auto;
+}
+
+.ff2, .d33 {
+    padding: 6px 60px;
+    font-size: small;
+    width: max-content;}
+a.geftsqz {
+    padding: 5px 5px 1px;
+    float: left;
+    background: #E91E63;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.d33 {
+    background: #FFEB3B;
+    border: unset;
+    color: #333;
+}
+
+.ff2 {
+    background: #03A9F4;
+    border: unset;
+    color: #fff;
+}
+
+    
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-table;
+    width: 48%;
+    padding: 8px 16px;
+    font-family: &#39;Droid Arabic Kufi&#39;;
+    display: inline-table;
+    float: right;
+    margin-left: 17px;
+    background: #fff url(http://2.bp.blogspot.com/-9ZDPbzJ5cws/X-ZLJS3IGeI/AAAAAAAAER8/UB2xiLyxbgQR-0jnrANk0jWSWvxcibwawCK4BGAYYCw/s1600/download.png) no-repeat right .75rem center;
+    /* display: inline-block; */
+    padding: .375rem 1.75rem .375rem .75rem;
+    color: #495057;
+    vertical-align: middle;
+    background-size: 5px 7px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 6px;
+}
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: &quot;&quot;;
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media screen and (max-width: 750px){
+.page-menu{height:100%;margin:inherit;display:block;background-color:inherit;border-radius:inherit;padding:inherit}
+#menu input,#menu label{position:absolute;display:block;font-size:45px;margin:18px 0 0 0;margin-top: 0px;left:43%}
+#menu input{z-index:4;margin:0;width:30px;height:55px;opacity:0;cursor:pointer}
+#menu input:checked ~ ul{display:block}
+#menu ul{top:100%;position:absolute;left:0;z-index:3;height:auto;display:none;padding-top:57px}
+#menu li{display: block; float: none; text-align: center; background-color: #fff; width: 300px; border-radius: 3px; background-clip: padding-box; border: 1px solid rgba(232, 222, 222, 0.15); box-shadow: 0 3px 8px rgba(0, 0, 0, 0.11); height: 39px; line-height: 23px;}
+#menu li a{cursor:pointer;width:100%}
+#LinkList1{float:none}
+.PageList{float:none;margin-top:0;display:inline-block;margin-bottom:10px}
+.PageList ul li a{font-size:11px;padding:2px 8px}}
